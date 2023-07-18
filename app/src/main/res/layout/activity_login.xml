@@ -10,14 +10,14 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivAhorraVoltiosLogin"
         android:layout_width="177dp"
         android:layout_height="226dp"
         android:layout_weight="1"
         android:src="@drawable/vector_energy_saving_caring_for_the_earth_png_images___vector__power_windmill__renewable_energy_png_transparent_background___pngtree" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAhorraVoltiosLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="12dp"
@@ -27,7 +27,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvUserLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
@@ -35,7 +35,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/etUserLogin"
         android:layout_width="245dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -43,7 +43,7 @@
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvPasswordLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
@@ -52,7 +52,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/etPasswordLogin"
         android:layout_width="245dp"
         android:layout_height="43dp"
         android:ems="10"
@@ -68,7 +68,7 @@
         android:paddingBottom="12dp">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvForgotPassLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -77,7 +77,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvResetPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -89,7 +89,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#4B9E4E"
@@ -105,7 +105,7 @@
         android:paddingBottom="12dp">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tvHaveAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -114,7 +114,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tvRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -140,7 +140,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/ibHomeLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -148,7 +148,7 @@
                 android:src="@drawable/home_fill0_wght0_grad0_opsznan" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/ibProfileLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -156,7 +156,7 @@
                 android:src="@drawable/person_fill0_wght400_grad0_opsz48" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/ibSearchLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -164,7 +164,7 @@
                 android:src="@drawable/search_fill0_wght0_grad0_opsznan" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/ibSettingsLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

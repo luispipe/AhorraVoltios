@@ -4,6 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/ivAhorraVoltiosRegister"
+        android:layout_width="177dp"
+        android:layout_height="226dp"
+        app:srcCompat="@drawable/vector_energy_saving_caring_for_the_earth_png_images___vector__power_windmill__renewable_energy_png_transparent_background___pngtree" />
+
+    <TextView
+        android:id="@+id/tvAhorraVoltiosRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="AhorraVoltios"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre y Apellidos"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvEmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico: "
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etEmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/tvUsernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etUsernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre único de usuario"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvPhoneRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPhoneRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Celular o Fijo"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/tvPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2C7B30"
+            android:text="Registrarse"
+            android:textSize="20sp"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4B9E4E"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibHomeLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:src="@drawable/home_fill0_wght0_grad0_opsznan" />
+
+            <ImageButton
+                android:id="@+id/ibProfileLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:src="@drawable/person_fill0_wght400_grad0_opsz48" />
+
+            <ImageButton
+                android:id="@+id/ibSearchLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:src="@drawable/search_fill0_wght0_grad0_opsznan" />
+
+            <ImageButton
+                android:id="@+id/ibSettingsLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:src="@drawable/settings_fill0_wght0_grad0_opsznan" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

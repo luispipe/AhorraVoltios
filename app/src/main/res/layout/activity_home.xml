@@ -1,9 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="177dp"
+        android:layout_height="226dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/vector_energy_saving_caring_for_the_earth_png_images___vector__power_windmill__renewable_energy_png_transparent_background___pngtree" />
+
+    <TextView
+        android:id="@+id/tvAhorraVoltiosHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:text="AhorraVoltios"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="#BDF5BF"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#BDF5BF"
+            android:backgroundTintMode="src_over"
+            android:text="Estadisticas"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:cornerRadius="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/data_customizable_disproportionate_illustrations___cuate_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="#b2dfdb"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#b2dfdb"
+            android:text="Categorias"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:cornerRadius="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="#b2dfdb"
+            app:srcCompat="@drawable/category_fill0_wght400_grad0_opsz48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="#80cbc4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#80cbc4"
+            android:text="Button"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:cornerRadius="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="#80cbc4"
+            app:srcCompat="@drawable/reviews_fill0_wght400_grad0_opsz48" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4B9E4E"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibHomeLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4B9E4E"
+            android:src="@drawable/home_fill0_wght0_grad0_opsznan" />
+
+        <ImageButton
+            android:id="@+id/ibProfileLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4B9E4E"
+            android:src="@drawable/person_fill0_wght400_grad0_opsz48" />
+
+        <ImageButton
+            android:id="@+id/ibSearchLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4B9E4E"
+            android:src="@drawable/search_fill0_wght0_grad0_opsznan" />
+
+        <ImageButton
+            android:id="@+id/ibSettingsLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4B9E4E"
+            android:src="@drawable/settings_fill0_wght0_grad0_opsznan" />
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
