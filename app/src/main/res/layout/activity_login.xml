@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/ivAhorraVoltiosLogin"
-        android:layout_width="177dp"
-        android:layout_height="226dp"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
         android:layout_weight="1"
         android:src="@drawable/vector_energy_saving_caring_for_the_earth_png_images___vector__power_windmill__renewable_energy_png_transparent_background___pngtree" />
 
@@ -20,7 +20,6 @@
         android:id="@+id/tvAhorraVoltiosLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="12dp"
         android:paddingBottom="12dp"
         android:text="AhorraVoltios"
         android:textSize="34sp"
@@ -37,7 +36,7 @@
     <EditText
         android:id="@+id/etUserLogin"
         android:layout_width="245dp"
-        android:layout_height="43dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Email-Username-Télefono"
         android:inputType="text" />
@@ -54,7 +53,7 @@
     <EditText
         android:id="@+id/etPasswordLogin"
         android:layout_width="245dp"
-        android:layout_height="43dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Ingrese su contraseña"
         android:inputType="text" />
@@ -64,8 +63,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp">
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
 
         <TextView
             android:id="@+id/tvForgotPassLogin"
@@ -101,8 +100,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp">
+        android:paddingTop="5dp"
+        android:paddingBottom="8dp">
 
         <TextView
             android:id="@+id/tvHaveAccount"
