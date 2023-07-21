@@ -53,6 +53,7 @@
         android:layout_height="30dp" />
 
     <TableLayout
+        android:id="@+id/tableStadistics"
         android:layout_width="300dp"
         android:layout_height="wrap_content">
 

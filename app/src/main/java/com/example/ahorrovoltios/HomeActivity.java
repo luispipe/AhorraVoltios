@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import java.util.Locale;
+
 public class HomeActivity extends AppCompatActivity {
 
     Button stadistics,category,recommendation;
@@ -26,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
 
         Intent stadisticsView= new Intent(this, StadisticsActivity.class);
         Intent recommendationView= new Intent(this, RecommendationActivity.class);
-
+        Intent categoryView= new Intent(this, ServiceActivity.class);
         stadistics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +54,20 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(recommendationView);
             }
         });
+
+        category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(categoryView);
+            }
+        });
+        ivCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(categoryView);
+            }
+        });
+
 
     }
 }
