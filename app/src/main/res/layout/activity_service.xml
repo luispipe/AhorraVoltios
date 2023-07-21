@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
+    tools:context=".ServiceActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,29 +23,25 @@
         android:textSize="34sp"
         android:textStyle="bold" />
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="55dp" />
+
     <LinearLayout
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:background="#BDF5BF"
+        android:background="#41BCF4"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btStadistics"
-            android:layout_width="230dp"
-            android:layout_height="80dp"
-            android:backgroundTint="#BDF5BF"
-            android:backgroundTintMode="src_over"
-            android:text="Estadisticas"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:cornerRadius="0dp" />
-
-        <ImageView
-            android:id="@+id/ivStadisticsHome"
-            android:layout_width="85dp"
-            android:layout_height="match_parent"
+            android:id="@+id/btAgua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/data_customizable_disproportionate_illustrations___cuate_style" />
+            android:backgroundTint="#41BCF4"
+            android:text="AGUA"
+            android:textColor="#010101"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <Space
@@ -55,53 +51,18 @@
     <LinearLayout
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:background="#b2dfdb"
+        android:background="#64CFC5"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btCategory"
-            android:layout_width="230dp"
-            android:layout_height="80dp"
-            android:backgroundTint="#b2dfdb"
-            android:text="Categorias"
+            android:id="@+id/btEnergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#64CFC5"
+            android:text="ELECTRICIDAD"
             android:textColor="#000000"
-            android:textSize="24sp"
-            app:cornerRadius="0dp" />
-
-        <ImageView
-            android:id="@+id/ivCategory"
-            android:layout_width="85dp"
-            android:layout_height="match_parent"
-            android:background="#b2dfdb"
-            app:srcCompat="@drawable/category_fill0_wght400_grad0_opsz48" />
-    </LinearLayout>
-
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="15dp" />
-
-    <LinearLayout
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:background="#80cbc4"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btRecommendationHome"
-            android:layout_width="230dp"
-            android:layout_height="80dp"
-            android:backgroundTint="#80cbc4"
-            android:text="Consejos"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:cornerRadius="0dp" />
-
-        <ImageView
-            android:id="@+id/ivRecommendationHome"
-            android:layout_width="85dp"
-            android:layout_height="match_parent"
-            android:background="#80cbc4"
-            app:srcCompat="@drawable/reviews_fill0_wght400_grad0_opsz48" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
