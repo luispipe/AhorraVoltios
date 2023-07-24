@@ -12,6 +12,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.example.ahorrovoltios.models.Energy;
+import com.example.ahorrovoltios.models.Water;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,6 +42,11 @@ public class StadisticsActivity extends AppCompatActivity {
 
         List<Energy> energyList= readFile(energyFile);
         addEnergyData(energyList);
+
+        File waterFile= new File(getFilesDir(), "water.txt");
+
+        List<Water> waterList= readFileWater(waterFile);
+        addWaterData(waterList);
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +104,67 @@ public class StadisticsActivity extends AppCompatActivity {
             TextView cell4= new TextView(this);
             cell4.setText(String.valueOf(i.getPrice()));
           //  cell4.setPadding(10,10,10,10);
+            cell4.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            cell4.setWidth(60);
+            cell4.setBackgroundResource(R.color.white);
+
+            row.addView(cell1);
+            row.addView(cell2);
+            row.addView(cell3);
+            row.addView(cell4);
+
+            table.addView(row);
+        }
+
+    }
+    public  static List<Water> readFileWater(File file){
+        List<Water> waterList= new ArrayList<>();
+        try (BufferedReader br= new BufferedReader(new FileReader(file))){
+            String line;
+            while ((line= br.readLine()) != null){
+                String[] data= line.split(",");
+                float volume= Float.parseFloat(data[0]);
+                float price= Float.parseFloat(data[1]);
+                String month= data[2];
+                Water waterObj= new Water(volume,price,month);
+                waterList.add(waterObj);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return waterList;
+    }
+
+    public void addWaterData(List<Water> waterList){
+
+        for (Water i:waterList) {
+            TableRow row= new TableRow(this);
+            TextView cell1= new TextView(this);
+            cell1.setText(i.getMonth());
+            cell1.setWidth(80);
+            cell1.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            //   cell1.setPadding(10,10,10,10);
+            cell1.setBackgroundResource(R.color.white);
+
+            TextView cell2= new TextView(this);
+            cell2.setText("Água");
+            cell2.setWidth(90);
+            cell2.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+
+            //   cell2.setPadding(10,10,10,10);
+            cell2.setBackgroundResource(R.color.white);
+
+            TextView cell3= new TextView(this);
+            cell3.setText(i.getVolume()+"");
+            cell3.setWidth(90);
+            cell3.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+
+            //   cell3.setPadding(10,10,10,10);
+            cell3.setBackgroundResource(R.color.white);
+
+            TextView cell4= new TextView(this);
+            cell4.setText(String.valueOf(i.getPrice()));
+            //  cell4.setPadding(10,10,10,10);
             cell4.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             cell4.setWidth(60);
             cell4.setBackgroundResource(R.color.white);
