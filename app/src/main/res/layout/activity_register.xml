@@ -12,15 +12,15 @@
     <ImageView
         android:id="@+id/ivAhorraVoltiosRegister"
         android:layout_width="177dp"
-        android:layout_height="226dp"
+        android:layout_height="180dp"
         app:srcCompat="@drawable/vector_energy_saving_caring_for_the_earth_png_images___vector__power_windmill__renewable_energy_png_transparent_background___pngtree" />
 
     <TextView
         android:id="@+id/tvAhorraVoltiosRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         android:text="AhorraVoltios"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -103,6 +103,20 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Ingrese su contraseña"
+            android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/tvPasswordTwoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repita la Contraseña:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPasswordTwoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su contraseña "
             android:inputType="textPassword" />
 
         <Button

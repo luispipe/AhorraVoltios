@@ -23,6 +23,14 @@
         android:textSize="34sp"
         android:textStyle="bold" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:backgroundTintMode="src_in"
+        app:srcCompat="@drawable/home_fill0_wght0_grad0_opsznan" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -116,6 +124,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#4B9E4E"
+                android:backgroundTintMode="multiply"
                 android:src="@drawable/home_fill0_wght0_grad0_opsznan" />
 
             <ImageButton
