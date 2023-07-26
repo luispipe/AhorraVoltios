@@ -58,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if (checkUser(email.getText().toString(),
                             username.getText().toString())){
-                        Toast.makeText(getApplicationContext(),"Este usuario ya esta registrado",Toast.LENGTH_LONG);
+                        Toast.makeText(getApplicationContext(),"Este usuario ya esta registrado",Toast.LENGTH_LONG).show();
 
                     }else{
                         User user= new User(name.getText().toString(),
@@ -71,10 +71,10 @@ public class RegisterActivity extends AppCompatActivity {
                     }
 
                 }else{
-                    Toast.makeText(getApplicationContext(),"Las contraseñas no coinciden",Toast.LENGTH_LONG);
+                    Toast.makeText(getApplicationContext(),"Las contraseñas no coinciden",Toast.LENGTH_LONG).show();
                 }
                 }else{
-                    Toast.makeText(getApplicationContext(),"Todos los campos deben estar diligenciados",Toast.LENGTH_LONG);
+                    Toast.makeText(getApplicationContext(),"Todos los campos deben estar diligenciados",Toast.LENGTH_LONG).show();
                 }
 
 
