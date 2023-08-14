@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".UsersListActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/vector_energy_saving_caring_for_the_earth_png_images___vector__power_windmill__renewable_energy_png_transparent_background___pngtree" />
+
+    <TextView
+        android:id="@+id/tvAhorraVoltiosHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:text="AhorraVoltios"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivListU"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/person_fill0_wght400_grad0_opsz48" />
+
+        <TextView
+            android:id="@+id/tvListU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Listar Usuarios"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TableLayout
+        android:id="@+id/tableListU"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvNameU"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="#BBEEBD"
+                android:foregroundTint="#DA0606"
+                android:text="Nombre"
+                android:textAlignment="center"
+                android:textColorHighlight="#C71414" />
+
+            <TextView
+                android:id="@+id/tvEmailU"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="#BBEEBD"
+                android:text="Email"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvUsernameU"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="#BBEEBD"
+                android:text="Username"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvPhoneU"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#BBEEBD"
+                android:text="Teléfono"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4B9E4E"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibHomeLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:backgroundTintMode="multiply"
+                android:src="@drawable/home_fill0_wght0_grad0_opsznan" />
+
+            <ImageButton
+                android:id="@+id/ibProfileLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:src="@drawable/person_fill0_wght400_grad0_opsz48" />
+
+            <ImageButton
+                android:id="@+id/ibSearchLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:src="@drawable/search_fill0_wght0_grad0_opsznan" />
+
+            <ImageButton
+                android:id="@+id/ibSettingsLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4B9E4E"
+                android:src="@drawable/settings_fill0_wght0_grad0_opsznan" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

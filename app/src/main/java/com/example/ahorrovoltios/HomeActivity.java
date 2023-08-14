@@ -12,8 +12,8 @@ import java.util.Locale;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button stadistics,category,recommendation;
-    ImageView ivStadistics,ivCategory,ivRecommendation;
+    Button stadistics,category,recommendation,listUser;
+    ImageView ivStadistics,ivCategory,ivRecommendation,ivListUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +22,15 @@ public class HomeActivity extends AppCompatActivity {
         stadistics= findViewById(R.id.btStadistics);
         category= findViewById(R.id.btCategory);
         recommendation= findViewById(R.id.btRecommendationHome);
+        listUser=findViewById(R.id.btListUsers);
         ivStadistics= findViewById(R.id.ivStadisticsHome);
         ivCategory= findViewById(R.id.ivCategory);
         ivRecommendation= findViewById(R.id.ivRecommendationHome);
-
+        ivListUser=findViewById(R.id.ivListUsers);
         Intent stadisticsView= new Intent(this, StadisticsActivity.class);
         Intent recommendationView= new Intent(this, RecommendationActivity.class);
         Intent categoryView= new Intent(this, ServiceActivity.class);
+        Intent listUserView= new Intent(this, UsersListActivity.class);
         stadistics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +70,17 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
+        listUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(listUserView);
+            }
+        });
+        ivListUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(listUserView);
+            }
+        });
     }
 }
