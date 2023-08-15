@@ -49,11 +49,39 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp" />
 
-    <TextView
-        android:id="@+id/tvListRecommendations"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp" />
+    <TableLayout
+        android:id="@+id/TableRecommendation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewRecommendationType"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#B7EBB9"
+                android:text="Tipo Consejo"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewRecommendationDesc"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#8DC28F"
+                android:text="Descripción"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
